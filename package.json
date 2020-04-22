@@ -1,11 +1,15 @@
 {
-  "name": "first-component",
-  "version": "0.1.0",
-  "private": true,
+  "name": "my-custom-component-demo",
+  "version": "0.1.1",
+  "private": false,
+  "description": "自定义组件库",
+  "main": "lib/custom-component.umd.min.js",
+  "keyword": "custom-component",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name custom-component --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.4",
